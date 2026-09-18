@@ -1,0 +1,1 @@
+<template><div class="overlay" @click.self="$emit('close')"><div class="modal"><div class="modalhead"><h3>{{title}}</h3><button class="x" @click="$emit('close')">×</button></div><slot/></div></div></template><script setup lang="ts">defineProps<{title:string}>();defineEmits(['close'])</script>
